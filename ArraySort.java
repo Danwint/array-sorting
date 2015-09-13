@@ -1,5 +1,16 @@
 import java.util.Random;
-
+/*
+ *	ARRAY SORTING
+ *	
+ *	Write code in the indicated area below to sort the elements of "numbers"
+ *  array in ascending order.
+ *  
+ *	Example:
+ *  The following is example output after a successful implementation:
+ *	
+ *		Before sorting: {70, 67, 86, 49, 99, 70, 4, 15, 88, 78}
+ *		After sorting: {4, 15, 49, 67, 70, 70, 78, 86, 88, 99}	
+*/
 public class ArraySort {
 	public static void main(String[] args) {
 		int[] numbers = new int[10];  // This is the array to sort
