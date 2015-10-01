@@ -26,8 +26,24 @@ public class ArraySort {
 		System.out.println("}");
 		// ∧ ∧ ∧ ∧ ∧ ∧ ∧ LEAVE THE CODE ABOVE THIS LINE ALONE!!! ∧ ∧ ∧ ∧ ∧ ∧ ∧ 
 		
-		// YOUR CODE TO SORT THE numbers ARRAY GOES HERE
-		
+		for(int i = 0; i < numbers.length; i++) {
+			int currentIndex = i;
+			int indexOfSmallest = i;
+			int smallestValue = numbers[i];
+			for(int j = i + 1; j < numbers.length; j++) {
+				if(numbers[j] < smallestValue) {
+					smallestValue = numbers[j];
+					indexOfSmallest = j;
+				}
+			}
+			if (currentIndex != indexOfSmallest) {
+				 int numberStorage = numbers[currentIndex];
+				 numbers[currentIndex] = smallestValue;
+				 numbers[indexOfSmallest] = numberStorage;
+			}
+			//System.out.println(smallestValue+" CI: "+currentIndex+" IoS: "+indexOfSmallest);
+		}
+		System.out.println("\n\nDrum roll please...\n\n");
 		// ∨ ∨ ∨ ∨ ∨ ∨ ∨ LEAVE THE CODE BELOW THIS LINE ALONE!!! ∨ ∨ ∨ ∨ ∨ ∨ ∨  
 		boolean isWrong = false;
 		System.out.print("After sorting: {");
